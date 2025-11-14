@@ -1,0 +1,15 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Consulta {
+  id          String   @id @default(uuid())
+  transcricao String
+  analise     String   // Vamos salvar o JSON como string aqui para simplificar o SQLite
+  data        DateTime @default(now())
+}

@@ -1,0 +1,26 @@
+{
+  "name": "medico-api",
+  "version": "1.0.0",
+  "description": "API estruturada para o Médico Copilot",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "npx prisma migrate deploy && node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.16.0",
+    "@prisma/client": "5.17.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "prisma": "5.17.0"
+  },
+  "prisma": {
+    "schema": "src/db/schema.prisma"
+  }
+}
