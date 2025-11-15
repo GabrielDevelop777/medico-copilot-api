@@ -1,4 +1,3 @@
-// src/services/gemini.service.js
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
@@ -25,7 +24,7 @@ exports.analisarConsulta = async (transcricao) => {
   {
     "diagnosticoSugerido": "texto",
     "examesRecomendados": ["item1", "item2"],
-    "medicamentosSugeridos": ["itemitem1", "item2"],
+    "medicamentosSugeridos": ["item1", "item2"],
     "observacoes": "texto",
     "prioridade": "Alta" | "Média" | "Baixa"
   }
