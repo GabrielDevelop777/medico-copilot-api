@@ -10,6 +10,6 @@ datasource db {
 model Consulta {
   id          String   @id @default(uuid())
   transcricao String
-  analise     String   // Vamos salvar o JSON como string aqui para simplificar o SQLite
+  analise     String
   data        DateTime @default(now())
 }

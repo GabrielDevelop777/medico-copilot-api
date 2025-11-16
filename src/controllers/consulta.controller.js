@@ -1,9 +1,8 @@
-// src/controllers/consulta.controller.js
-const prisma = require("../db/prisma"); // Nosso cliente Prisma
-const gemini = require("../services/gemini.service"); // Nosso serviço de IA
+const prisma = require("../db/prisma"); // Cliente Prisma
+const gemini = require("../services/gemini.service"); // Serviço de IA
 const { inferirPrioridade } = require("../services/prisma.service");
 
-// O 'next' é o nosso "segurança" (o errorHandler)
+// O 'next' é a  "segurança" (o errorHandler)
 // Se algo der erro, chamamos next(error)
 
 // --- CONTROLADOR DE TRANSCRIÇÃO ---

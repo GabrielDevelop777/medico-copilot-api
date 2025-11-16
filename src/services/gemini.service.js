@@ -1,7 +1,7 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const modelName = "gemini-2.5-flash"; // O nome do modelo que funciona
+const modelName = "gemini-2.5-flash";
 
 // --- SERVIÇO 1: Transcrição ---
 exports.transcreverAudio = async (audioBase64) => {

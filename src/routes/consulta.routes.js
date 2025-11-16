@@ -5,9 +5,6 @@ const controller = require("../controllers/consulta.controller");
 const router = express.Router();
 const upload = multer({ storage: multer.memoryStorage() });
 
-// DEFINIÇÃO DAS ROTAS (O "QUÊ")
-// O 'controller' diz O QUE FAZER (A "COMO")
-
 // Rota de Transcrição
 // POST /api/consulta/transcrever
 router.post(

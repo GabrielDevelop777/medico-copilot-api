@@ -1,5 +1,3 @@
-// src/services/prisma.service.js
-
 // Esta função "adivinha" a prioridade de dados antigos
 exports.inferirPrioridade = (diagnostico, transcricao) => {
 	if (!diagnostico || !transcricao) return "Média"; // Padrão
