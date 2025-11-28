@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Serve os arquivos estáticos da aplicação front-end
 // IMPORTANTE: Substitua '../client/dist' pelo caminho correto para a pasta de build do seu front-end
-const frontEndPath = path.join(__dirname, "../../../medico-copilot/dist");
+const frontEndPath = path.join(__dirname, "../../medico-copilot/dist");
 app.use(express.static(frontEndPath));
 
 // Qualquer requisição em /api será gerenciada pelo nosso roteador
